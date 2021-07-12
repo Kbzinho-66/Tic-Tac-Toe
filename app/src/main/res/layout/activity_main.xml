@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/PolarNight1">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:tooltipText="Teste">
+
+        <TextView
+            android:id="@+id/indicadorDeTurno"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/Black"
+            android:gravity="center"
+            android:text="@string/begin"
+            android:textColor="@color/Red"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@+id/nestedScrollView"
+        app:layout_anchorGravity="center"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <GridLayout
+            android:id="@+id/tabuleiro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:useDefaultMargins="true"
+            tools:context=".MainActivity"
+            tools:ignore="ContentDescription">
+
+            <ImageView
+                android:id="@+id/posicao_0"
+                android:layout_width="@dimen/celula_imagem"
+                android:layout_height="@dimen/celula_imagem"
+                android:background="@color/PolarNight4" />
+
+            <ImageView
+                android:id="@+id/posicao_1"
+                android:layout_width="@dimen/celula_imagem"
+                android:layout_height="@dimen/celula_imagem"
+                android:background="@color/PolarNight4" />
+
+            <ImageView
+                android:id="@+id/posicao_2"
+                android:layout_width="@dimen/celula_imagem"
+                android:layout_height="@dimen/celula_imagem"
+                android:background="@color/PolarNight4" />
+
+            <ImageView
+                android:id="@+id/posicao_3"
+                android:layout_width="@dimen/celula_imagem"
+                android:layout_height="@dimen/celula_imagem"
+                android:background="@color/PolarNight4" />
+
+            <ImageView
+                android:id="@+id/posicao_4"
+                android:layout_width="@dimen/celula_imagem"
+                android:layout_height="@dimen/celula_imagem"
+                android:background="@color/PolarNight4" />
+
+            <ImageView
+                android:id="@+id/posicao_5"
+                android:layout_width="@dimen/celula_imagem"
+                android:layout_height="@dimen/celula_imagem"
+                android:background="@color/PolarNight4" />
+
+            <ImageView
+                android:id="@+id/posicao_6"
+                android:layout_width="@dimen/celula_imagem"
+                android:layout_height="@dimen/celula_imagem"
+                android:background="@color/PolarNight4" />
+
+            <ImageView
+                android:id="@+id/posicao_7"
+                android:layout_width="@dimen/celula_imagem"
+                android:layout_height="@dimen/celula_imagem"
+                android:background="@color/PolarNight4" />
+
+            <ImageView
+                android:id="@+id/posicao_8"
+                android:layout_width="@dimen/celula_imagem"
+                android:layout_height="@dimen/celula_imagem"
+                android:background="@color/PolarNight4" />
+
+        </GridLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="40dp">
+
+        <ImageButton
+            android:id="@+id/botaoJogador1"
+            android:layout_width="@dimen/celula_funcao"
+            android:layout_height="@dimen/celula_funcao"
+            android:layout_marginHorizontal="5dp"
+            android:background="@color/Cyan"
+            android:contentDescription="Imagem do Jogador 1"
+            android:foreground="@drawable/ic_um"
+            android:foregroundTint="@color/Black"
+            android:padding="10dp"
+            android:scaleType="centerCrop"
+            tools:ignore="HardcodedText" />
+
+        <ImageButton
+            android:id="@+id/botaoJogador2"
+            android:layout_width="@dimen/celula_funcao"
+            android:layout_height="@dimen/celula_funcao"
+            android:layout_marginHorizontal="5dp"
+            android:background="@color/Aurora2"
+            android:contentDescription="Imagem do Jogador 2"
+            android:foreground="@drawable/ic_dois"
+            android:foregroundTint="@color/Black"
+            android:padding="10dp"
+            android:scaleType="centerCrop"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/botaoClear"
+            android:layout_width="@dimen/celula_funcao"
+            android:layout_height="@dimen/celula_funcao"
+            android:layout_marginHorizontal="5dp"
+            android:background="@color/Aurora3"
+            android:contentDescription="Botão Limpa Tabuleiro"
+            android:src="@drawable/ic_c"
+            app:tint="@color/Black"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
