@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/PolarNight1">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:tooltipText="Teste">
+
+        <TextView
+            android:id="@+id/indicadorDeTurno"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/Black"
+            android:gravity="center"
+            android:text="@string/begin"
+            android:textColor="@color/Red"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/foto_ganhador"
+        android:layout_marginTop="40dp"
+        app:layout_anchor="@+id/nestedScrollView"
+        app:layout_anchorGravity="center"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <ImageView
+            android:layout_width="@dimen/foto_ganhador"
+            android:layout_height="@dimen/foto_ganhador"
+            android:layout_marginStart="5dp"
+
+            android:contentDescription="@string/winner_pic" />
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="40dp">
+
+
+        <ImageView
+            android:id="@+id/botaReplay"
+            android:layout_width="@dimen/celula_funcao"
+            android:layout_height="@dimen/celula_funcao"
+            android:layout_marginHorizontal="5dp"
+            android:background="@color/Green"
+            android:contentDescription="Imagem do Jogador 2"
+            android:foreground="@drawable/ic_replay"
+            android:foregroundTint="@color/Black"
+            android:padding="10dp"
+            android:scaleType="centerCrop"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/botaoClear"
+            android:layout_width="@dimen/celula_funcao"
+            android:layout_height="@dimen/celula_funcao"
+            android:layout_marginHorizontal="5dp"
+            android:background="@color/Aurora3"
+            android:contentDescription="Botão Limpa Tabuleiro"
+            android:src="@drawable/ic_c"
+            app:tint="@color/Black"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

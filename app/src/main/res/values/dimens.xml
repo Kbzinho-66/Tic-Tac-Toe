@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="celula_imagem">125dp</dimen>
+    <dimen name="celula_funcao">120dp</dimen>
+    <dimen name="foto_ganhador">395dp</dimen>
+</resources>

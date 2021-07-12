@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">JogoDaVelha</string>
+    <string name="begin">Tire as fotos dos jogadores</string>
+    <string name="player_1">Turno do Jogador 1</string>
+    <string name="player_2">Turno do Jogador 2</string>
+    <string name="pick_first">Escolha o primeiro jogador</string>
+    <string name="victory">Jogador %1$d venceu!</string>
+    <string name="draw">Empate!</string>
+    <string name="winner_pic">Foto do ganhador</string>
+</resources>
