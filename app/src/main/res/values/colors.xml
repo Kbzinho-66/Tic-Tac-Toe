@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  Nord  -->
+    <color name="PolarNight1">#2E3440</color>
+    <color name="PolarNight2">#3B4252</color>
+    <color name="PolarNight3">#434C5E</color>
+    <color name="PolarNight4">#4C566A</color>
+    <color name="SnowStorm1">#D8DEE9</color>
+    <color name="SnowStorm2">#E5E9F0</color>
+    <color name="SnowStorm3">#ECEFF4</color>
+    <color name="Frost1">#8FBCBB</color>
+    <color name="Frost2">#88C0D0</color>
+    <color name="Frost3">#81A1C1</color>
+    <color name="Frost4">#5E81AC</color>
+    <color name="Aurora1">#BF616A</color>
+    <color name="Aurora2">#D08770</color>
+    <color name="Aurora3">#EBCB8B</color>
+    <color name="Aurora4">#A3BE8C</color>
+    <color name="Aurora5">#B48EAD</color>
+
+    <!--  One Dark  -->
+    <color name="Black">#282C34</color>
+    <color name="Red">#E06C75</color>
+    <color name="Green">#98C379</color>
+    <color name="Yellow">#E5C07B</color>
+    <color name="LightBlue">#61AFEF</color>
+    <color name="Pink">#C678DD</color>
+    <color name="Cyan">#56B6C2</color>
+    <color name="Grey">#ABB2BF</color>
+
+    
+</resources>
