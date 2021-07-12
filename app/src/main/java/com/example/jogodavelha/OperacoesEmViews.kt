@@ -6,6 +6,7 @@ import android.widget.TextView
 class OperacoesEmViews {
 
     companion object {
+        //TODO (Mudar pra usar contexto ao invés de MainActivity)
 
         private lateinit var main: MainActivity
 

@@ -16,6 +16,7 @@ class Jogador(contexto: Context) {
 
     private fun criaArquivo(contexto: Context): Uri? {
 
+        // TODO (Mudar isso aqui)
         val timestamp = SimpleDateFormat("yyyyMMdd_Hhmmss").format(Date())
         val pasta = contexto.getExternalFilesDir(Environment.DIRECTORY_PICTURES)
         val imagem = pasta?.let { it.path + File.separator + "${timestamp}.jpg" }
